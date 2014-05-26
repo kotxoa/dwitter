@@ -9,5 +9,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^tweet/(\d+)/$', 'website.views.tweet_page'),
     url(r'^$', 'website.views.timeline'),
 )
