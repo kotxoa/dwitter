@@ -10,5 +10,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tweet/(\d+)/$', 'website.views.tweet_page'),
+    url(r'^user/(\w+)/$', 'website.views.user_page'),
     url(r'^$', 'website.views.timeline'),
 )
